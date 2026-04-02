@@ -315,6 +315,38 @@ This section verifies that the local development environment is correctly set up
 
 ---
 
+## 📊 Data Organization
+
+This project follows a clear separation of data stages to ensure reproducibility and data integrity.
+
+### 🔹 Data Structure
+
+- **data/raw/**
+  - Contains original, unmodified data
+  - This data is treated as read-only
+
+- **data/processed/**
+  - Contains cleaned and transformed datasets
+  - Derived from raw data
+
+- **outputs/**
+  - Stores generated results such as reports and visualizations
+  - Includes:
+    - figures/ → charts and plots
+    - reports/ → summaries and outputs
+
+### 🔹 Key Principles
+
+- Raw data is never modified
+- Processed data is reproducible from raw data
+- Outputs are stored separately from input data
+- Data flow is one-directional:  
+  **raw → processed → outputs**
+
+This structure ensures clarity, traceability, and reproducibility.
+
+---
+
 ### 💻 System Details
 
 - Operating System: Windows
