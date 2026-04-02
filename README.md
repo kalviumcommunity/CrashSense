@@ -270,6 +270,45 @@ These insights help enable **targeted interventions** that can reduce accidents 
 
 ---
 
+## 📁 Project Folder Structure
+
+This project follows a clean and organized Data Science folder structure:
+
+```bash
+CrashSense/
+│
+├── data/
+│   ├── raw/         # Original unmodified data
+│   └── processed/   # Cleaned and transformed data
+│
+├── notebooks/       # Jupyter notebooks for exploration
+│
+├── src/             # Reusable scripts and core logic
+│
+├── outputs/
+│   ├── figures/     # Visualizations and charts
+│   └── reports/     # Final reports and results
+
+```
+
+---
+
+
+### 🔹 Structure Rationale
+
+- **data/** → Keeps raw and processed data separate to avoid corruption  
+- **notebooks/** → Used for exploration and analysis  
+- **src/** → Contains reusable and structured code  
+- **outputs/** → Stores generated results (never raw data)  
+
+This structure ensures:
+- Clear separation of concerns  
+- Easy navigation  
+- Reproducibility  
+- Better collaboration  
+---
+
+
 ## 🛠️ Environment Verification (Data Science Setup)
 
 This section verifies that the local development environment is correctly set up and ready for Data Science workflows.
